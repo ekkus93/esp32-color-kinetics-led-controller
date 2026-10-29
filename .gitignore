@@ -66,3 +66,20 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ESP-IDF
+/sdkconfig
+/sdkconfig.old
+/managed_components/
+/dependencies.lock
+sdkconfig.*.old
+*.elf
+*.bin
+*.map
+.vscode/
+.idea/
+.pio/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store

@@ -1,0 +1,4 @@
+# Default firmware is diagnostic-safe; CK_OUTPUT_ENABLED=0 in main.c.
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+# ESP32-S3 N16R8 16MB flash, PSRAM unused in initial prototype.
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
