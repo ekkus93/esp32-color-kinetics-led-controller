@@ -1,0 +1,59 @@
+name: ESP32-S3 firmware
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  host-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Chromasic bit framing
+        run: bash tests/run_host_tests.sh
+
+  esp-idf-build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: ESP-IDF system prerequisites
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+      - name: Fetch exact ESP-IDF v6.1 revision
+        env:
+          IDF_SHA: fff9895c82d744c7237be8847347bdd1b07c6643
+        run: |
+          mkdir -p "$RUNNER_TEMP/esp-idf"
+          git -C "$RUNNER_TEMP/esp-idf" init
+          git -C "$RUNNER_TEMP/esp-idf" remote add origin https://github.com/espressif/esp-idf.git
+          git -C "$RUNNER_TEMP/esp-idf" fetch --depth 1 origin "$IDF_SHA"
+          git -C "$RUNNER_TEMP/esp-idf" checkout --detach "$IDF_SHA"
+          git -C "$RUNNER_TEMP/esp-idf" submodule update --init --recursive --depth 1
+          test "$(git -C "$RUNNER_TEMP/esp-idf" rev-parse HEAD)" = "$IDF_SHA"
+      - name: Install ESP32-S3 toolchain
+        run: |
+          "$RUNNER_TEMP/esp-idf/install.sh" esp32s3
+      - name: Configure and compile safe firmware
+        shell: bash
+        run: |
+          source "$RUNNER_TEMP/esp-idf/export.sh"
+          idf.py set-target esp32s3
+          idf.py build
+          test -s build/chromasic_esp32s3.bin
+      - name: Upload safe-mode binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: esp32s3-safe-firmware
+          path: |
+            build/chromasic_esp32s3.bin
+            build/bootloader/bootloader.bin
+            build/partition_table/partition-table.bin
+          if-no-files-found: error
+          retention-days: 14
