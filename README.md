@@ -70,3 +70,7 @@ Color Kinetics/Signify controller. Apache 2.0 license (LICENSE).
 ## Wiring
 
 The [editable SVG wiring diagram](docs/WIRING_DIAGRAM.svg) shows the proposed ESP32-S3, MAX485-type transmitter, buck converter, 24V supply and four-wire leader. Read the [wiring and verification notes](docs/WIRING.md) before attaching power: physical connector pin positions have **not** been verified.
+
+## Chromasic waveform and frame format
+
+See the [editable SVG timing/signal diagram](docs/CHROMASIC_SIGNAL_DIAGRAM.svg) and the [protocol signal reference](docs/CHROMASIC_SIGNALS.md) for 0/1 pulse widths, framed 12-bit brightness words, 60-node frame timing, and the ESP32-to-differential physical layer. The diagrams are **illustrative**, not measured waveforms.

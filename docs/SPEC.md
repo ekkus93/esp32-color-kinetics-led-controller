@@ -42,3 +42,10 @@ before wiring. Never connect 24 V to GPIO or directly attach unknown conductors.
 6. Dim single-node through all-60-node test successful (pending).
 
 Passing compilation alone does not prove device compatibility.
+
+## Signal diagrams
+See [CHROMASIC_SIGNALS.md](CHROMASIC_SIGNALS.md) for wire-level bit timing,
+field layouts, the nominal 10,047-bit recurring frame and the proposed
+RS-485-class electrical interface, with the [editable timing SVG](CHROMASIC_SIGNAL_DIAGRAM.svg).
+The 6,000-bit idle interval and the fixed-white channel-1-only assignment are
+experimental choices, not proven requirements of this particular LED string.

@@ -17,3 +17,8 @@
 - Sources: Color Kinetics eW Flex Compact Product Guide and Glen Akins' leader reverse engineering. Connector cavity numbering/polarity remains unverified for this custom 5-foot harness.
 - Earlier exact-head CI success observed at commit 38f8bd81f36862c2e4a9ce60ca4acc0a016d1878 (run 40825204684). Current commit needs independent CI verification.
 - Firmware follow-up: product guide says first and second white channels can drive separate LED groups; prototype only sets first channel.
+
+## Protocol reference diagram — 2026-10-28
+- Added docs/CHROMASIC_SIGNALS.md and docs/CHROMASIC_SIGNAL_DIAGRAM.svg to explain bit pulse widths, 21-bit start code, three 12-bit LSB-first channels, 61-bit nodes, six flush nodes, and frame cadence.
+- Correctly distinguishes Glen's measured/reverse-engineered iColor Flex characteristics from the 6,000-zero idle count and unverified eW Flex mapping in our code.
+- Safe firmware remains unchanged (GPIO output disabled); no physical capture has been performed.

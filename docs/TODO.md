@@ -35,3 +35,8 @@ Mark complete only after acceptance evidence is available.
 - [ ] Measure actual 5-foot harness continuity, converter and signal polarity.
 - [ ] Confirm exact differential transmitter module and physical connector cavity mapping.
 - [ ] Validate whether the eW Compact nodes require two active white channels.
+
+## Protocol signal documentation
+- [x] Document the transmitted RMT bit cells, framing, idle timing and proposed differential signal path with editable SVG.
+- [ ] Verify GPIO timing and uninterrupted output on a real ESP32-S3 with a logic analyzer.
+- [ ] Compare actual eW Flex HE electrical waveform and white channel behavior with published iColor Flex observations.
