@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id="title">Proposed ESP32-S3 Chromasic to Color Kinetics 4-wire leader wiring</title>
+<desc id="desc">24 volt power supply to red and black leader. 24-to-5 volt converter supplies MAX485 driver. USB-powered ESP32 GPIO18 to DI. MAX485 A noninverted to blue white and B inverted to blue. Connector physical pins are not established, so all mappings must be measured before connection.</desc>
+<rect width="1600" height="1100" fill="#f4f8fc"/>
+<rect width="1600" height="97" fill="#193750"/>
+<text x="54" y="57" font-family="Arial,sans-serif" font-size="33" font-weight="700" fill="#fff">ESP32-S3 + Color Kinetics eW Flex Compact HE</text>
+<text x="55" y="83" font-family="Arial,sans-serif" font-size="16" font-weight="500" fill="#d3e5f4">PROPOSED 4-WIRE DIFFERENTIAL LEADER  |  60 LED NODES  |  24V  |  Chromasic</text>
+<rect x="55" y="108" width="1488" height="94" rx="14" fill="#fff1dd" stroke="#e8ad5c" stroke-width="2"/>
+<text x="77" y="142" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#932e14">STOP: verify physical wire identities and polarity before connecting power.</text>
+<text x="77" y="168" font-family="Arial,sans-serif" font-size="17" font-weight="500" fill="#8a4c18">Typical leader colors are documented; connector cavity positions and your custom 5-ft leader remain UNVERIFIED.</text>
+<text x="77" y="190" font-family="Arial,sans-serif" font-size="15" font-weight="500" fill="#8a4c18">Do not connect 24V to ESP32; do not attach a second transmitter to an already driven Color Kinetics cable.</text>
+<path d="M358 289 H414 V216 H1155 V326 H1186" fill="none" stroke="#cc383e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M414 289 H462" fill="none" stroke="#cc383e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M358 352 H462" fill="none" stroke="#33475c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M386 352 V772 H1150 V544 H1186" fill="none" stroke="#33475c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M358 659 H386" fill="none" stroke="#33475c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M702 289 H750 V327 H790" fill="none" stroke="#d99219" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M702 352 H762 V397 H790" fill="none" stroke="#33475c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M358 589 H774 V473 H790" fill="none" stroke="#008969" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1084 402 H1134 V430 H1186" fill="none" stroke="#1271b8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1084 471 H1164 V487 H1186" fill="none" stroke="#7752bf" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1383 610 V680" fill="none" stroke="#33475c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="53" y="242" width="305" height="172" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<rect x="462" y="242" width="240" height="172" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<rect x="790" y="240" width="294" height="377" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<rect x="1186" y="240" width="357" height="373" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<rect x="53" y="510" width="305" height="210" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<rect x="1186" y="680" width="357" height="171" rx="14" fill="#fff" stroke="#c1d2e1" stroke-width="2"/>
+<text x="75" y="274" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#1d354b">24V DC SUPPLY</text>
+<text x="74" y="310" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#cc383e">+24V → fused output</text>
+<text x="74" y="371" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#33475c">0V / −</text>
+<text x="75" y="401" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#637688">Isolated, rated ≥3 A</text>
+<circle cx="358" cy="289" r="7" fill="#cc383e" stroke="#fff" stroke-width="2"/>
+<circle cx="358" cy="352" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<text x="480" y="274" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#1d354b">24V → 5V BUCK</text>
+<text x="482" y="310" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#cc383e">VIN+ (24V)</text>
+<text x="482" y="374" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#33475c">VIN−</text>
+<text x="615" y="309" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#d99219">5V OUT</text>
+<text x="627" y="374" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#33475c">GND</text>
+<circle cx="462" cy="289" r="7" fill="#cc383e" stroke="#fff" stroke-width="2"/>
+<circle cx="462" cy="352" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<circle cx="702" cy="289" r="7" fill="#d99219" stroke="#fff" stroke-width="2"/>
+<circle cx="702" cy="352" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<text x="808" y="271" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#1d354b">MAX485 TX MODULE</text>
+<text x="808" y="299" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#5d7488">Verified 5V differential driver</text>
+<text x="809" y="332" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#d99219">VCC ← 5V</text>
+<text x="809" y="400" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#33475c">GND</text>
+<text x="809" y="476" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#008969">DI ← GPIO18</text>
+<text x="986" y="402" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#1271b8">A / +</text>
+<text x="986" y="471" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7752bf">B / −</text>
+<text x="809" y="527" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#1d354b">DE → 5V   (TX enabled)</text>
+<text x="809" y="553" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#1d354b">/RE → 5V  (RX disabled)</text>
+<text x="809" y="580" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#1d354b">RO → not connected</text>
+<text x="809" y="604" font-family="Arial,sans-serif" font-size="13" font-weight="500" fill="#97491f">Confirm A/B labeling in chip datasheet</text>
+<circle cx="790" cy="327" r="7" fill="#d99219" stroke="#fff" stroke-width="2"/>
+<circle cx="790" cy="397" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<circle cx="790" cy="473" r="7" fill="#008969" stroke="#fff" stroke-width="2"/>
+<circle cx="1084" cy="402" r="7" fill="#1271b8" stroke="#fff" stroke-width="2"/>
+<circle cx="1084" cy="471" r="7" fill="#7752bf" stroke="#fff" stroke-width="2"/>
+<text x="1205" y="276" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#1d354b">LEADER (4 conductors)</text>
+<text x="1206" y="299" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#637688">Typical Color Kinetics colors</text>
+<text x="1207" y="333" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#cc383e">RED  →  +24V</text>
+<text x="1207" y="436" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#1271b8">BLUE / WHITE  →  DATA +</text>
+<text x="1207" y="493" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#7752bf">BLUE  →  DATA −</text>
+<text x="1207" y="550" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#33475c">BLACK  →  0V</text>
+<text x="1208" y="587" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9b4b1d">NO CONNECTOR PIN NUMBERS IMPLIED</text>
+<circle cx="1186" cy="326" r="7" fill="#cc383e" stroke="#fff" stroke-width="2"/>
+<circle cx="1186" cy="430" r="7" fill="#1271b8" stroke="#fff" stroke-width="2"/>
+<circle cx="1186" cy="487" r="7" fill="#7752bf" stroke="#fff" stroke-width="2"/>
+<circle cx="1186" cy="544" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<text x="75" y="545" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#1d354b">ESP32-S3 N16R8</text>
+<text x="75" y="572" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#526d84">USB powered during development</text>
+<text x="75" y="596" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#008969">GPIO18 → MAX485 DI</text>
+<text x="75" y="665" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#33475c">GND → shared 0V</text>
+<text x="75" y="704" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#9b4b1d">GPIO18 firmware output: OFF by default</text>
+<circle cx="358" cy="589" r="7" fill="#008969" stroke="#fff" stroke-width="2"/>
+<circle cx="358" cy="659" r="7" fill="#33475c" stroke="#fff" stroke-width="2"/>
+<text x="1207" y="714" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#1d354b">EXISTING LED LEADER / 60 NODES</text>
+<text x="1208" y="744" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#66768b">Leader-end converter must be present</text>
+<rect x="1222" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1238" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<rect x="1269" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1285" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<rect x="1316" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1332" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<rect x="1363" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1379" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<rect x="1410" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1426" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<rect x="1457" y="775" width="32" height="35" rx="5" fill="#2c435a"/>
+<circle cx="1473" cy="792" r="7" fill="#ffcc6b" stroke="#ffecbf" stroke-width="2"/>
+<text x="1210" y="839" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#a34b1d">Not the bare 3-wire node bus</text>
+<rect x="55" y="795" width="1070" height="261" rx="14" fill="#edf4fa" stroke="#ccdbe8" stroke-width="2"/>
+<text x="75" y="828" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#24465f">CONNECTION TABLE</text>
+<text x="77" y="863" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">24V PSU + (fused)</text>
+<text x="392" y="863" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">red leader + buck VIN+</text>
+<text x="913" y="863" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">24V rail</text>
+<text x="77" y="890" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">24V PSU −</text>
+<text x="392" y="890" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">black leader + buck VIN− + ESP GND</text>
+<text x="913" y="890" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">0V reference</text>
+<text x="77" y="917" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">Buck output +5V</text>
+<text x="392" y="917" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">MAX485 VCC, DE and /RE</text>
+<text x="913" y="917" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">enable TX / disable RX</text>
+<text x="77" y="944" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">Buck GND</text>
+<text x="392" y="944" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">MAX485 GND</text>
+<text x="913" y="944" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">common ground</text>
+<text x="77" y="971" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">ESP32 GPIO18</text>
+<text x="392" y="971" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">MAX485 DI (3.3V logic)</text>
+<text x="913" y="971" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">Chromasic pulses</text>
+<text x="77" y="998" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">MAX485 A (non-inverting)</text>
+<text x="392" y="998" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">leader blue/white</text>
+<text x="913" y="998" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">DATA +</text>
+<text x="77" y="1025" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#263c51">MAX485 B (inverting)</text>
+<text x="392" y="1025" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#2b5167">leader blue</text>
+<text x="913" y="1025" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#587086">DATA −</text>
+<text x="77" y="1047" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#99401b">MAX485 RO is NOT CONNECTED. Check 3.3V-to-5V input compatibility; A/B labels differ by vendor.</text>
+<text x="58" y="1082" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#536e83">Source: Color Kinetics eW Flex Compact Product Guide; Glen Akins (2019), iColor Flex reverse engineering. Electrical topology only.</text>
+</svg>

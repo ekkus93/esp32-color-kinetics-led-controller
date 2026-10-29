@@ -29,3 +29,9 @@ Mark complete only after acceptance evidence is available.
 - [ ] Add Wi-Fi provisioning, local web UI, global brightness and power.
 - [ ] Add individual node control, effects, presets and animation speed.
 - [ ] Consider WLED/Home Assistant integration.
+
+## Wiring and white-channel qualification
+- [x] Add editable proposed differential wiring diagram and safety verification notes.
+- [ ] Measure actual 5-foot harness continuity, converter and signal polarity.
+- [ ] Confirm exact differential transmitter module and physical connector cavity mapping.
+- [ ] Validate whether the eW Compact nodes require two active white channels.
