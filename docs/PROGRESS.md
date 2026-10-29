@@ -22,3 +22,9 @@
 - Added docs/CHROMASIC_SIGNALS.md and docs/CHROMASIC_SIGNAL_DIAGRAM.svg to explain bit pulse widths, 21-bit start code, three 12-bit LSB-first channels, 61-bit nodes, six flush nodes, and frame cadence.
 - Correctly distinguishes Glen's measured/reverse-engineered iColor Flex characteristics from the 6,000-zero idle count and unverified eW Flex mapping in our code.
 - Safe firmware remains unchanged (GPIO output disabled); no physical capture has been performed.
+
+## Preliminary hardware BOM — 2026-10-28
+- Added docs/BOM.md with dated US-dollar component references (MAX485 $1.09, 24-to-5 V converter $7.00, 24 V/4 A external adapter $27.41, inline 3 A fuse holder $5.99) and non-quoted wiring/connector allowances.
+- Incremental bench-prototype budget $49.49–$58.49, excluding existing ESP32/LED string, taxes, postage, tools and optional enclosure. These are estimates, not purchases.
+- Procurement is blocked pending electrical identification of custom leader and existing receiver. Fuse selection and line termination remain unverified.
+- Previous exact-commit firmware CI was green at 2960be415f7d6b660bd413ca0844f8f06880cdbd, GitHub Actions run 40827308809. This new documentation-only commit needs its own CI observation.

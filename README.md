@@ -74,3 +74,7 @@ The [editable SVG wiring diagram](docs/WIRING_DIAGRAM.svg) shows the proposed ES
 ## Chromasic waveform and frame format
 
 See the [editable SVG timing/signal diagram](docs/CHROMASIC_SIGNAL_DIAGRAM.svg) and the [protocol signal reference](docs/CHROMASIC_SIGNALS.md) for 0/1 pulse widths, framed 12-bit brightness words, 60-node frame timing, and the ESP32-to-differential physical layer. The diagrams are **illustrative**, not measured waveforms.
+
+## Bill of materials and estimated costs
+
+See [docs/BOM.md](docs/BOM.md) for a costed 24 V + MAX485 bench prototype BOM, supplier examples, optional test tools, and a distinction between already-owned and additional parts. The estimate excludes tax/shipping and is **not an approved connector pinout or qualified electrical design**.

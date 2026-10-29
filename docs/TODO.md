@@ -40,3 +40,10 @@ Mark complete only after acceptance evidence is available.
 - [x] Document the transmitted RMT bit cells, framing, idle timing and proposed differential signal path with editable SVG.
 - [ ] Verify GPIO timing and uninterrupted output on a real ESP32-S3 with a logic analyzer.
 - [ ] Compare actual eW Flex HE electrical waveform and white channel behavior with published iColor Flex observations.
+
+## Procurement and BOM
+- [x] Document costed preliminary BOM, existing hardware, reference suppliers, and optional equipment.
+- [ ] Verify original leader's receiver and connector before committing to wiring-specific purchases.
+- [ ] Confirm actual transmitter's termination, 3.3 V DI logic compatibility and correct A/B labeling.
+- [ ] Select fuse and wire gauge from actual startup/load measurements and harness ratings.
+- [ ] Reconcile actual purchase prices, shipping and final as-built parts against the BOM.

@@ -47,3 +47,7 @@ Do not add a 120-ohm bus termination resistor until inspecting the actual receiv
 These sources document a compatible 4-wire leader with red power, black ground, blue inverted data and blue/white non-inverted data. They do **not** verify the custom user-supplied harness or any connector cavity orientation.
 
 **Separate firmware issue:** the eW Flex Compact product guide describes white output on the first two DMX channels (different portions of LEDs); the prototype currently only drives Chromasic channel 1. Investigate before asserting full brightness support.
+
+## Parts and budget
+
+See [BOM.md](BOM.md) for priced examples, estimated costs and procurement hold points. The listed 5 V MAX485 module may contain a 120 Ω termination resistor; inspect it and the existing receiver before using or adding termination. The pictured four-wire connector still requires measurement.
