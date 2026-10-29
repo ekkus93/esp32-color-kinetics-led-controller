@@ -28,3 +28,10 @@
 - Incremental bench-prototype budget $49.49–$58.49, excluding existing ESP32/LED string, taxes, postage, tools and optional enclosure. These are estimates, not purchases.
 - Procurement is blocked pending electrical identification of custom leader and existing receiver. Fuse selection and line termination remain unverified.
 - Previous exact-commit firmware CI was green at 2960be415f7d6b660bd413ca0844f8f06880cdbd, GitHub Actions run 40827308809. This new documentation-only commit needs its own CI observation.
+
+## Developer instructions — 2026-10-28
+- Documented fresh Ubuntu 22.04/24.04 pinned-SDK setup, exact toolchain checks, lint, tests, build artifacts, safe flash, serial monitor, troubleshooting and 16MB N16R8 configuration in README.md.
+- Added tests/run_lint.sh (Bash syntax, ShellCheck, C11 with warnings-as-errors, Git whitespace) and corresponding GitHub Actions step.
+- Local host C compiler syntax and protocol tests passed; ShellCheck was unavailable locally and must be confirmed by exact-commit CI.
+- Previous exact-commit CI passed at 11d11570110bbed3220ecef306a788791fbdb7d6 (run 40827838576). This commit requires independent CI confirmation.
+- No physical ESP32-S3 flashing or serial monitor verification has been performed.

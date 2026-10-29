@@ -47,3 +47,8 @@ Mark complete only after acceptance evidence is available.
 - [ ] Confirm actual transmitter's termination, 3.3 V DI logic compatibility and correct A/B labeling.
 - [ ] Select fuse and wire gauge from actual startup/load measurements and harness ratings.
 - [ ] Reconcile actual purchase prices, shipping and final as-built parts against the BOM.
+
+## Reproducible local development
+- [x] Expand README to cover Ubuntu dependencies, pinned ESP-IDF v6.1, environment activation, lint, tests, build, flashing, serial monitoring, cleanup and troubleshooting.
+- [x] Add script-based lint and run it from the GitHub Actions host-tests job.
+- [ ] Follow the README end-to-end on a fresh Ubuntu host with physical ESP32-S3 and verify flash/monitor.
